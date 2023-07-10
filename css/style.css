@@ -1,0 +1,89 @@
+/* selettore de tag  */
+html{
+  font-size: 14px;
+}
+body{
+  /* utilizzo di font di sistema  */
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+
+  /* utilizzo di Google font  */
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+h1{
+  color: brown;
+  text-align: center;
+  /* il font sarà il triplo della dimensione di default (in html ho specificato essere 16 quindi sarà 14 * 3) */
+  font-size: 3rem;
+}
+
+p{
+  color: blueviolet;
+  text-align:justify;
+}
+
+.container{
+  width: 1000px;
+}
+
+/* 
+
+-- commento su più righe
+
+selettore per id   
+*/
+#paragrafo-principale{
+  color: red;
+  font-size: 32px;
+  text-align: right;
+}
+
+/* selettore per class  */
+.paragrafo-generico{
+  color: blue;
+  text-align: left;
+  background-color: beige;
+}
+
+.box{
+  width: 700px;
+  height: 300px;
+  border: 1px solid black;
+  font-size: 20px;
+}
+
+.box p{
+  /* visto che il box ha un font di 20px il p in esso contenuto avrà 30px  */
+  font-size: 1.5em;
+}
+
+.box.box-rosso{
+  background-color: red;
+}
+
+.box.box-salmone{
+  /* colore con HEX */
+  /* background-color: #F6988F; */
+
+  /* stesso colore con rgb */
+  background-color: rgb(246, 153, 143);
+}
+
+.box.box-salmone-trasp{
+  /* colore con trasparenza -> 0 a 1  */  
+  background-color: rgba(246, 153, 143, .5);
+}
+
+
+.paragrafo-grassetto{
+  font-weight: 700;
+}
+
+.box-con-img{
+  width: 100%;
+  background-image: url('../img/polli.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
