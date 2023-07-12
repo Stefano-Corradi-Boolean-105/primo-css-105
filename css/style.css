@@ -1,3 +1,4 @@
+
 /* selettore de tag  */
 html{
   font-size: 14px;
@@ -18,13 +19,29 @@ h1{
   font-size: 3rem;
 }
 
+/* più specifico di class */
+#testo-ultimo{
+  color: chartreuse;
+}
+
+/* più specifico di p */
+.ultimo-testo{
+  color: brown;
+}
+
 p{
   color: blueviolet;
   text-align:justify;
 }
 
+
+
 .container{
   width: 1000px;
+}
+
+.hide{
+  display: none;
 }
 
 /* 
@@ -51,6 +68,7 @@ selettore per id
   height: 300px;
   border: 1px solid black;
   font-size: 20px;
+  margin: 20px;
 }
 
 .box p{
@@ -60,19 +78,28 @@ selettore per id
 
 .box.box-rosso{
   background-color: red;
+  border-width: 5px;
+  /* la dimensione del box rimane qualla impostata e nno è influenzata da border o padding */
+  box-sizing: border-box;
 }
 
 .box.box-salmone{
   /* colore con HEX */
   /* background-color: #F6988F; */
-
+  
   /* stesso colore con rgb */
   background-color: rgb(246, 153, 143);
+  
+  /* con 2 valori il primo e top/bottom e sil secondo left/right */
+  border-width: 3px 10px;
+  box-sizing: border-box;
 }
 
 .box.box-salmone-trasp{
   /* colore con trasparenza -> 0 a 1  */  
   background-color: rgba(246, 153, 143, .5);
+
+  border-radius: 10px;
 }
 
 
@@ -86,4 +113,32 @@ selettore per id
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
+}
+
+.box-con-padding{
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  background-color: aquamarine;
+  height: 300px;
+  /* la percenduale del padding è sempre riferita alla larghezza del contenitore */
+  padding-left:10%;
+  padding-top:10%;
+}
+
+.dida{
+  margin: 20px;
+}
+
+.dida span{
+  /* trasformo span da inline a block  */
+  display: block;
+}
+
+.nome{
+  display: inline-block;
+  background-color: brown;
+  color: white;
+  width: 300px;
+  height: 200px;
 }
