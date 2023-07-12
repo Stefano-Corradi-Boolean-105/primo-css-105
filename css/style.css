@@ -9,7 +9,7 @@ body{
 
   /* utilizzo di Google font  */
   font-family: 'Roboto', sans-serif;
-  
+  padding-bottom: 200px;
 }
 
 h1{
@@ -141,4 +141,73 @@ selettore per id
   color: white;
   width: 300px;
   height: 200px;
+}
+
+.box-con-margini{
+  width: 200px;
+  height: 150px;
+  margin: 20px; 
+  background-color: aqua;
+}
+
+.box-con-margini.primo{
+  margin-bottom: 40px;
+}
+.box-con-margini.secondo{
+  /* questa istruzione non funziona perché collassano i margini con quelo superiore  */
+  margin-top: 30px;
+}
+
+/* impostazioni link */
+a{
+  text-decoration: none;
+  text-transform:uppercase;
+  color: brown;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:active{
+  color: red;
+}
+a:visited{
+  color: aquamarine;
+}
+
+
+.lista-pricipale li{
+  color: aqua;
+}
+
+/* selseziono il primo elemento  */
+.lista-pricipale li:first-child{
+  color: red;
+}
+/* seleziono l'ultimo elemento  */
+.lista-pricipale li:last-child{
+  color: green;
+}
+/* seleziono il quarto elemento  */
+.lista-pricipale li:nth-child(4)
+{
+  color: blue;
+}
+/* seleziono tutto gli elementi dispari  */
+.lista-secondaria li:nth-child(odd){
+  color: brown;
+}
+/* seleziono tutto gli elementi pari  */
+.lista-secondaria li:nth-child(even){
+  color:blueviolet;
+}
+
+/* seleziono tutti i multipli di 3 */
+.lista-altra li:nth-child(3n){
+  color: red;
+}
+/* multipli di 3 a partire da quinto elemento  */
+.lista-altra-bis li:nth-child(3n + 5){
+  color: red;
 }
