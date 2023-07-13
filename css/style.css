@@ -44,6 +44,37 @@ p{
   display: none;
 }
 
+header{
+  text-align: center;
+  padding: 30px;
+}
+
+/* menu */
+.main-manu ul{
+  list-style: none;
+}
+
+.main-manu ul li{
+  display: inline-block;
+  margin: 0 10px;
+  
+}
+
+.main-manu ul li a{
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: yellow;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: cadetblue;
+}
+
+.main-manu ul li a:hover{
+  text-decoration: none;
+  background-color: yellow;
+  color: cadetblue;
+}
+
 /* 
 
 -- commento su più righe
